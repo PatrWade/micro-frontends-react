@@ -1,0 +1,29 @@
+.skeleton {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+}
+
+.image {
+  width: 200px;
+  height: 100px;
+  margin-right: 12px;
+}
+
+.descriptionContainer {
+  margin-bottom: 12px;
+  height: 25px;
+  width: 100%;
+}
+
+.description {
+  margin-bottom: 12px;
+  height: 20px;
+  width: 100%;
+}
+
+.article {
+  display: flex;
+  max-width: 300px;
+  width: 100%;
+  margin-bottom: 18px;
+}

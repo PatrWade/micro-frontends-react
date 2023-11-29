@@ -1,0 +1,24 @@
+{
+  "name": "micro-frontends-react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently 'npm run start:*' 'npm run start -w container'",
+    "start:products": "npm run start -w products",
+    "start:teaser": "npm run start -w teaser",
+    "start:checkout": "npm run start -w checkout"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "workspaces": [
+    "packages/container",
+    "packages/products",
+    "packages/teaser",
+    "packages/checkout"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
