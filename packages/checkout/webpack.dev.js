@@ -7,7 +7,10 @@ const devConfig = {
   mode: "development",
   devServer: {
     port: 8083,
-    hot: true,
+    hot: false,
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
   },
   plugins: [
     new ModuleFederationPlugin({

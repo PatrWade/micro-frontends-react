@@ -7,6 +7,7 @@ const devConfig = {
   mode: "development",
   devServer: {
     port: 8080,
+    hot: false,
   },
   plugins: [
     new ModuleFederationPlugin({
