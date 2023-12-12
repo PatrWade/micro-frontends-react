@@ -2,14 +2,14 @@ import React from "react";
 import { createRoot } from "react-dom/client";
 import { Teasers } from "./components/teasers";
 
-// local micro frontend development
 if (process.env.NODE_ENV === "development") {
-  document.body.innerHTML = '<div id="teasers-dev-root"></div>';
+  const devRoot = document.querySelector("#teaser-dev-root");
 
-  const root = createRoot(document.querySelector("#teasers-dev-root"));
+  if (devRoot) {
+    const root = createRoot(devRoot);
 
-  root.render(<Teasers />);
+    root.render(<Teasers />);
+  }
 }
 
-// export for container
 export { Teasers };
