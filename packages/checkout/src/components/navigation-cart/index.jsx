@@ -6,9 +6,10 @@ export const NavigationCart = () => {
   const [cartProducts, setCartProducts] = useState([]);
 
   const listener = (event) => {
-    setCartProducts((currentProducts) =>
-      currentProducts.concat(event.detail.productId)
-    );
+    setCartProducts((currentProducts) => [
+      ...currentProducts,
+      event.detail.productId,
+    ]);
   };
 
   useEffect(() => {
